@@ -1,0 +1,11 @@
+
+public class NoBot extends GenBot
+{
+	
+	private double[] firstCoords;
+	private double[] secondCoords;
+	public void SetXCoord (int newX)
+	{
+		
+	}
+}
