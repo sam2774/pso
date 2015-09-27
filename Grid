@@ -1,0 +1,42 @@
+
+public class Grid {
+
+	private GenBot[] genbots;
+	private NoBot nobot;
+	
+	//Austin doesn't like foo
+	//spawn a bot
+	public void spawn(int foo){
+		
+		//spawn nobot
+		if (foo < 0) {
+			
+		}
+		
+		//spawn a GenBot
+		else {
+			
+		}
+	}
+	
+	//pso algorithm
+	public void pso(GenBot genbot){
+		
+	}
+	
+	//the algorithm is as follows
+	//newV[] = v[] + c1.r1.(pBest[] - x[]) + c2.r2.(gBest[] - x[])
+	//newX[] = x[] + newV[]
+	
+	//v[] is velocity
+	//x[] is position
+	//r1 and r2 are random numbers in [0,1]
+	//c1 and c2 are acceleration coefficients
+	//c1 is how much the particle will follow pBest
+	//c2 is how much the particle will follow gBest
+	
+	//lowest value of particle becomes pBest, lowest is closest
+	//lowest value of all becomes gBest 
+	
+	genbot.set
+}
