@@ -8,7 +8,8 @@ public class GenBot
 	private double[] velocity = new double[numberOfCoords];
 	private double[] coords = new double[numberOfCoords];
 	private double[] pBest = new double [numberOfCoords];
-	public double GetXCoord()
+	
+	/*public double GetXCoord()
 	{
 		return xCoord;
 	}
@@ -26,5 +27,32 @@ public class GenBot
 	public void SetYCoord(double newY)
 	{
 		yCoord = newY;
+	}*/
+	
+	public double[] getVel(){
+		return velocity;
+	}
+	
+	public double[] getX(){
+		return coords;
+	}
+	
+	public double[] getP(){
+		return pBest;
+	}
+	
+	public void setVel(double foo, double bar){
+		velocity[0] = foo;
+		velocity[1] = bar;
+	}
+	
+	public void setX(double foo, double bar){
+		coords[0] = foo;
+		coords[1] = bar;
+	}
+	
+	public void setP(double foo, double bar){
+		pBest[0] = foo;
+		pBest[1] = bar;
 	}
 }
