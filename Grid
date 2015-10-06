@@ -1,0 +1,80 @@
+
+public class Grid {
+
+	private GenBot[] slaves;
+	private NoBot master;
+	
+	//Austin doesn't like foo
+	//spawn a bot
+	public void spawn(int foo){
+		
+		//spawn nobot
+		if (foo < 0) {
+			
+		}
+		
+		//spawn a GenBot
+		else {
+			
+		}
+	}
+	
+	//pso algorithm
+	public void movement(){
+		
+		//first random boolean
+		double temp = Math.random();
+		boolean foo = true;
+		if (temp < 0.5) {
+			foo = false;
+		}
+		
+		//second random boolean
+		temp = Math.random();
+		boolean bar = true;
+		if (temp < 0.5) {
+			bar = false;
+		}
+		
+		//Master robot movement
+		
+		//Master moves on X axis
+		if (foo) {
+			if(bar) {
+				master.left();
+			}
+			else {
+				master.right();
+			}
+		}
+		
+		//Master moves on Y axis
+		else {
+			if(bar) {
+				master.up();
+			}
+			else {
+				master.down();
+			}
+		}
+		
+		
+		//move slaves
+		for (int i = 0; i < slaves.length; i++) {
+			
+			//get the distance between the master
+			// and the slave on both axis
+			int x = abs(master.getX() - slaves[i].getX());
+			int y = abs(master.getY() - slaves[i].getY());
+			
+			//move in the direction in which
+			// the slave is farther away
+			if (x > y) {
+				slaves[i].moveX(master.getX());
+			}
+			else {
+				slaves[i].moveY(master.moveY());
+			}
+		}
+	}
+}
