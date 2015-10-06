@@ -1,30 +1,27 @@
 
 public class GenBot 
 {
-	//private double xCoord;
-	//private double yCoord;
-	private int numberOfCoords = 2;
-	private double acceleration = 2.0;
-	private double[] velocity = new double[numberOfCoords];
-	private double[] coords = new double[numberOfCoords];
-	private double[] pBest = new double [numberOfCoords];
-	public double GetXCoord()
+	private int xCoord;
+	private int yCoord;
+	
+	public int GetXCoord()
 	{
 		return xCoord;
 	}
 	
-	public double GetYCoord()
+	public int getYCoord()
 	{
 		return yCoord;
 	}
 	
-	public void SetXCoord(double newX)
+	public void moveYCoord()
 	{
-		xCoord = newX;
+		yCoord = yCoord + 1;
 	}
 	
-	public void SetYCoord(double newY)
+	public void moveXCoord()
 	{
-		yCoord = newY;
+		xCoord = xCoord +1;
 	}
+	
 }
