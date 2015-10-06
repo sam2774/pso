@@ -1,11 +1,36 @@
 
-public class NoBot extends GenBot
+public class NoBot 
 {
+	private int xCoord;
+	private int yCoord;
 	
-	private double[] firstCoords;
-	private double[] secondCoords;
-	public void SetXCoord (int newX)
+	public int getX()
 	{
-		
+		return xCoord;
+	}
+	
+	public int getY()
+	{
+		return yCoord;
+	}
+	
+	public void up()
+	{
+		yCoord = yCoord + 1;
+	}
+	
+	public void down()
+	{
+		yCoord = yCoord - 1;
+	}
+	
+	public void left()
+	{
+		yCoord = yCoord - 1;
+	}
+	
+	public void right()
+	{
+		xCoord = xCoord + 1;
 	}
 }
